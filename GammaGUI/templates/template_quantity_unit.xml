@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <quantity_unit>KG</quantity_unit>        
+  <quantity_unit>M3</quantity_unit>
+  <quantity_unit>g</quantity_unit>
+  <quantity_unit>L</quantity_unit>
+  <quantity_unit>VV</quantity_unit>
+  <quantity_unit>TV</quantity_unit>
+</root>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <spectrum_format>ORT</spectrum_format>      
+  <spectrum_format>CAN</spectrum_format>      
+  <spectrum_format>NOK</spectrum_format>      
+  <spectrum_format>GAM</spectrum_format>      
+</root>

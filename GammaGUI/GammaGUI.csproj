@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FB4D660-ACD2-49FF-9AF0-333D551E7F28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GammaGUI</RootNamespace>
+    <AssemblyName>GammaGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Assemblies\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Assemblies\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlWizard">
+      <HintPath>..\Assemblies\TabControlWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="VintageControls">
+      <HintPath>..\Assemblies\VintageControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\Assemblies\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beaker.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Detector.cs" />
+    <Compile Include="FormGammaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI.Designer.cs">
+      <DependentUpon>FormGammaGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_About.Designer.cs">
+      <DependentUpon>FormGammaGUI_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_AddBeaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_AddBeaker.Designer.cs">
+      <DependentUpon>FormGammaGUI_AddBeaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_AddDetector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_AddDetector.Designer.cs">
+      <DependentUpon>FormGammaGUI_AddDetector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_AnalResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_AnalResult.Designer.cs">
+      <DependentUpon>FormGammaGUI_AnalResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_ArchiveSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_ArchiveSearch.Designer.cs">
+      <DependentUpon>FormGammaGUI_ArchiveSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_Find.Designer.cs">
+      <DependentUpon>FormGammaGUI_Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_SelectDetector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_SelectDetector.Designer.cs">
+      <DependentUpon>FormGammaGUI_SelectDetector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_ShowSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_ShowSpec.Designer.cs">
+      <DependentUpon>FormGammaGUI_ShowSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGammaGUI_ShowText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGammaGUI_ShowText.Designer.cs">
+      <DependentUpon>FormGammaGUI_ShowText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INI.cs" />
+    <Compile Include="MultipadPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawPrintHelper.cs" />
+    <Compile Include="Utils.cs" />
+    <None Include="docs\Spek10.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_analysis_method.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_beaker.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_channel_count.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_dat2inp.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_detector.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_detector_dummy.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_fixchn.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_gamma.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_quantity_unit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_record_length.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_resolution_unit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_spectrum_format.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="FormGammaGUI.resx">
+      <DependentUpon>FormGammaGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_About.resx">
+      <DependentUpon>FormGammaGUI_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_AddBeaker.resx">
+      <DependentUpon>FormGammaGUI_AddBeaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_AddDetector.resx">
+      <DependentUpon>FormGammaGUI_AddDetector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_AnalResult.resx">
+      <DependentUpon>FormGammaGUI_AnalResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_ArchiveSearch.resx">
+      <DependentUpon>FormGammaGUI_ArchiveSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_Find.resx">
+      <DependentUpon>FormGammaGUI_Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_SelectDetector.resx">
+      <DependentUpon>FormGammaGUI_SelectDetector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_ShowSpec.resx">
+      <DependentUpon>FormGammaGUI_ShowSpec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGammaGUI_ShowText.resx">
+      <DependentUpon>FormGammaGUI_ShowText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <None Include="templates\template_Labinfo.%24%24%24">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\template_Spek10rap.tpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\analyse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\back.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\background16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\background64x64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\beaker16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\beaker64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\buffer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\clock16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\close.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\collapse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\create16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\detector16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\detector64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\drawer16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\drawer64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\expand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\folder16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\folder_open16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\inp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\journal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\library16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\library64x64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\lis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\nc.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\plot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\print.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\reanalyse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\reset.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\search.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\solsymb.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\start.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\stop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="images\toggle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="templates\template_application_settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="templates\template_cancon.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="templates\template_Spek10rap.ASF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

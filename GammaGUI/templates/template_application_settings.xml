@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <EmulateFixCHN>False</EmulateFixCHN>
+  <UseDefaultPrinter>False</UseDefaultPrinter>
+  <DefaultNuclideLibrary></DefaultNuclideLibrary>
+  <DefaultDetectionLimitLibrary></DefaultDetectionLimitLibrary>
+  <MaestroExecutable></MaestroExecutable>
+  <MaestroPickListFile></MaestroPickListFile>
+  <MaestroScriptStart>
+SET_DETECTOR @DID
+CLEAR
+SET_PRESET_CLEAR
+START
+QUIT
+  </MaestroScriptStart>
+  <MaestroScriptStop>
+SET_DETECTOR @DID
+STOP
+FILL_BUFFER
+SET_DETECTOR 0
+SAVE @SAVE_FILE
+CLEAR
+QUIT
+  </MaestroScriptStop>
+  <MaestroScriptBuffer>
+SET_DETECTOR @DID
+FILL_BUFFER
+SET_DETECTOR 0
+SAVE @BUFFER_FILE
+CLEAR
+QUIT
+  </MaestroScriptBuffer>  
+  <GenieFolder></GenieFolder>
+  <GeniePickListFile></GeniePickListFile>
+</root>

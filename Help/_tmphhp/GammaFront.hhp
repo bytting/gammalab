@@ -1,0 +1,31 @@
+[OPTIONS]
+TITLE=YourProject
+Full-text search=Yes
+Display compile notes=YES
+Display compile progress=YES
+Compatibility=1.1
+Default Window=Main
+Language=0x409 English (United States)
+Default Font=Arial,8,0
+Compiled file=gammafront.chm
+Error Log file=gammafront.log
+Contents file=gammafront.hhc
+Index File=gammafront.hhk
+Default Topic=topic1.html
+
+[FILES]
+topic1.html
+topic2.html
+topic3.html
+
+
+[WINDOWS]
+Main="Main","gammafront.hhc","gammafront.hhk","topic1.html","topic1.html", ,,,,0x061520,200, 0x00304E, [271, 322, 643, 516]  , 0x307e, , , , , , , , 0
+Popup="Popup","gammafront.hhc","gammafront.hhk","topic1.html","topic1.html", ,,,,0x061520,200, 0x00304E, [271, 322, 643, 516]  , 0x307e, , , , , , , , 0
+
+
+[MAP]
+#include gammafront.h
+
+[TEXT POPUPS]
+CSHelp.txt
